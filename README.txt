@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Simple Web Monetization by Interledger ===
 Contributors: divydovy
 Donate link: https://www.divydovy.com
 Tags: web monetization, interledger, charity
