@@ -13,8 +13,8 @@
  * @package           Simple_Web_Monetization_Wordpress_Interledger
  *
  * @wordpress-plugin
- * Plugin Name:       Simple Web Monetization WordPress Plugin by Interledger
- * Plugin URI:        https://github.com/divydovy/simple-web-monetization-interledger
+ * Plugin Name:       Simple Web Monetization by Interledger
+ * Plugin URI:        https://github.com/interledger/simple-web-monetization-interledger
  * Description:       A simple plugin to add Web Monetization to a WordPress site.
  * Version:           1.0.0
  * Author:            David Lockie
