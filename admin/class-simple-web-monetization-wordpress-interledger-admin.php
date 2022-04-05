@@ -261,14 +261,14 @@ class SimpleWebMonetizationForWordPressByInterledgerPluginSettings {
 			foreach ($charities as $charity) { // Loops through the charities array and outputs and a radio select for each
 				
 				$checked = ( isset( $this->simple_web_monetization_for_wordpress_by_interledger_plugin_settings_options['pick_a_payment_pointer_0'] ) && $this->simple_web_monetization_for_wordpress_by_interledger_plugin_settings_options['pick_a_payment_pointer_0'] === $charity["payment-pointer"] ) ? 'checked' : '' ; ?>
-					<label for="pick_a_payment_pointer_0-<?php echo $i; ?>"><input type="radio" name="simple_web_monetization_for_wordpress_by_interledger_plugin_settings_option_name[pick_a_payment_pointer_0]" id="pick_a_payment_pointer_0-<?php echo $i; ?>" value="<?php echo $charity['payment-pointer'] ?>" <?php echo $checked; ?>> <strong><?php echo $charity["name"] ?></strong> <a title="Find out more about <?php echo $charity["name"] ?>" href="<?php echo $charity["link"] ?>">(website)</a></label><br><p class="description"><?php echo $charity["description"] ?></p>
+					<label for="pick_a_payment_pointer_0-<?php echo esc_attr( $i ); ?>"><input type="radio" name="simple_web_monetization_for_wordpress_by_interledger_plugin_settings_option_name[pick_a_payment_pointer_0]" id="pick_a_payment_pointer_0-<?php echo esc_attr( $i ); ?>" value="<?php echo esc_attr( $charity['payment-pointer'] ); ?>" <?php echo esc_attr( $checked ); ?>> <strong><?php echo esc_attr( $charity["name"] ); ?></strong> <a title="Find out more about <?php echo esc_attr( $charity["name"] ); ?>" href="<?php echo esc_url( $charity["link"] ); ?>">(website)</a></label><br><p class="description"><?php echo esc_attr( $charity["description"] ); ?></p>
 				<?php 
 				$i++;
 			}
 
 			// Then we add a final option for 'custom'
 			$checked = ( isset( $this->simple_web_monetization_for_wordpress_by_interledger_plugin_settings_options['pick_a_payment_pointer_0'] ) && $this->simple_web_monetization_for_wordpress_by_interledger_plugin_settings_options['pick_a_payment_pointer_0'] === 'custom' ) ? 'checked' : '' ; ?>
-				<label for="pick_a_payment_pointer_0-<?php echo $i; ?>"><input type="radio" name="simple_web_monetization_for_wordpress_by_interledger_plugin_settings_option_name[pick_a_payment_pointer_0]" id="pick_a_payment_pointer_0-<?php echo $i; ?>" value="custom" <?php echo $checked; ?>> <strong>Custom payment pointer</strong></label><br><p class="description">Select this option to input any payment pointer</p>
+				<label for="pick_a_payment_pointer_0-<?php echo esc_attr( $i ); ?>"><input type="radio" name="simple_web_monetization_for_wordpress_by_interledger_plugin_settings_option_name[pick_a_payment_pointer_0]" id="pick_a_payment_pointer_0-<?php echo esc_attr( $i ); ?>" value="custom" <?php echo esc_attr( $checked ); ?>> <strong>Custom payment pointer</strong></label><br><p class="description">Select this option to input any payment pointer</p>
 		</fieldset>
 
 		<?php
