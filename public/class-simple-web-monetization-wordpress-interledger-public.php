@@ -85,8 +85,7 @@ class Simple_Web_Monetization_Wordpress_Interledger_Public {
 			//wp_die(var_dump($simple_web_monetization_for_wordpress_by_interledger_plugin_settings_options));
 
 			echo '<meta name="monetization" content="' . esc_attr( $payment_pointer ) . '" />' . PHP_EOL;
-			echo '<link rel="monetization" href="https://' . esc_attr( substr( $payment_pointer, 1 ) ) . '" />' . PHP_EOL;
-
+			echo '<link rel="monetization" href="https://' . substr( esc_attr( $payment_pointer ), 1 ) . '" />' . PHP_EOL;
 		} // End if WM is enabled
 
 	} // End add_wm_header_meta
